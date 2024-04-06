@@ -66,13 +66,13 @@ export default function Haader({
   },
 }: Nav) {
   return (
-    <nav class="container mx-auto lg:px-0 px-4">
-      <div class="flex gap-8 items-center justify-between py-4">
+    <nav class="w-full lg:px-0 px-4 bg-black ">
+      <div class="flex gap-8 items-center justify-between py-4 border-solid border-gray-700">
         <a href="/">
           <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
         </a>
 
-        <label
+        {/* <label
           class="cursor-pointer lg:hidden pt-6 relative z-40"
           for="menu-mobile"
         >
@@ -142,7 +142,7 @@ export default function Haader({
               </a>
             ))}
           </ul>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
