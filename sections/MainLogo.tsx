@@ -4,7 +4,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 interface Props {
   logoImg: ImageWidget;
   logoImgAlt: string;
-  logoSubTitle: string;
+  logoSubTitle?: string;
 }
 
 export default function MainLogo({logoImg, logoImgAlt, logoSubTitle}: Props) {
@@ -17,7 +17,7 @@ export default function MainLogo({logoImg, logoImgAlt, logoSubTitle}: Props) {
       />
     </div>
     <p class="text-justify text-2xl sm:text-3xl font-thin text-zinc-400 py-4">
-      {logoSubTitle}
+      {logoSubTitle || ""}
     </p>
   </div>)
 }
