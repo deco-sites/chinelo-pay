@@ -66,10 +66,10 @@ export default function Haader({
   },
 }: Nav) {
   return (
-    <nav class="w-full lg:px-0 px-4 bg-black ">
-      <div class="flex gap-8 items-center justify-between py-4 border-solid border-gray-700">
+    <nav class="w-full md:px-32 py-7 bg-black  border border-solid border-gray-700">
+      <div class="flex gap-8 items-center justify-center md:justify-start">
         <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+          <Image src={logo.src || ""} width={57} alt={logo.alt} />
         </a>
 
         {/* <label
