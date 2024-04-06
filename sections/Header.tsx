@@ -15,13 +15,13 @@ export interface Nav {
     src?: ImageWidget;
     alt?: string;
   };
-  navigation?: {
-    links: {
-      label?: string;
-      url?: string;
-    }[];
-    buttons: CTA[];
-  };
+  // navigation?: {
+  //   links: {
+  //     label?: string;
+  //     url?: string;
+  //   }[];
+  //   buttons: CTA[];
+  // };
 }
 
 export const ColorType: Record<Type, string> = {
@@ -52,21 +52,21 @@ export default function Haader({
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
     alt: "Logo",
   },
-  navigation = {
-    links: [
-      { label: "Home", url: "/" },
-      { label: "About us", url: "/" },
-      { label: "Princing", url: "/" },
-      { label: "Contact", url: "/" },
-    ],
-    buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", outline: false },
-      { id: "change-me-2", href: "/", text: "Change me", outline: true },
-    ],
-  },
+  // navigation = {
+  //   links: [
+  //     { label: "Home", url: "/" },
+  //     { label: "About us", url: "/" },
+  //     { label: "Princing", url: "/" },
+  //     { label: "Contact", url: "/" },
+  //   ],
+  //   buttons: [
+  //     { id: "change-me-1", href: "/", text: "Change me", outline: false },
+  //     { id: "change-me-2", href: "/", text: "Change me", outline: true },
+  //   ],
+  // },
 }: Nav) {
   return (
-    <nav class="w-full md:px-32 py-7 bg-black  border border-solid border-gray-700">
+    <nav class="w-full md:px-32 py-7 bg-black  border border-solid border-zinc-700">
       <div class="flex gap-8 items-center justify-center md:justify-start">
         <a href="/">
           <Image src={logo.src || ""} width={57} alt={logo.alt} />
