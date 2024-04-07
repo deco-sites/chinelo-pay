@@ -16,7 +16,7 @@ export default function MainLogo({logoImg, logoImgAlt, logoSubTitle}: Props) {
         alt={logoImgAlt}
       />
     </div>
-    <h2 class="text-justify text-2xl sm:text-3xl font-thin text-zinc-400 py-4">
+    <h2 class="text-justify text-2xl sm:text-3xl font-thin text-secondary py-4">
       {logoSubTitle || ""}
     </h2>
   </div>)

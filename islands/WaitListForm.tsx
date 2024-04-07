@@ -24,17 +24,18 @@ export default function WaitListForm({waitListTitle, waitListButtonText, privacy
       <input 
         class="mr-2 py-3 px-4 rounded-lg text-black"
         type="email"
+        data-wait="Só um momento..."
         placeholder="insira o seu melhor email"
         onChange={handleChange}
         required
       />
       <input
         type="submit"
-        class="cursor-pointer border-2 green-border-button rounded-lg py-3 px-6 text-base"
+        class="cursor-pointer border border-accent rounded-lg py-3 px-6 text-base"
         value={waitListButtonText}
       />
     </form>
-    <p class="font-extralight text-zinc-400 text-xs">
+    <p class="font-extralight text-secondary text-xs">
       Ao enviar o formulário, concordo com o tratamento dos meus dados
       pessoais conforme a <a class="font-bold border-b cursor-pointer" href={privacyTermsLink}>Política de Privacidade</a> e os <a class="font-bold border-b cursor-pointer" href={useTermsLink}>Termos de Uso</a>.
     </p>
