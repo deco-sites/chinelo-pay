@@ -8,8 +8,8 @@ interface Props {
 }
 
 export default function MainLogo({logoImg, logoImgAlt, logoSubTitle}: Props) {
-  return (<div class="bg-gradient-to-r from-zinc-800 via-zinc-950 to-zinc-950 px-10 sm:px-16 pt-16 flex flex-col items-center text-white">
-    <div class="inline-block">
+  return (<div class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-950 px-10 sm:px-16 pt-16 flex flex-col items-center text-white">
+    <div class="inline-block max-w-[744px]">
       <Image 
         width={715}
         src={logoImg}
