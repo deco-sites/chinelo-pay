@@ -35,7 +35,7 @@ export default function WaitListForm({waitListTitle, waitListButtonText, privacy
         value={waitListButtonText}
       />
     </form>
-    <p class="font-extralight text-secondary text-xs">
+    <p class="font-extralight text-secondary text-xs max-w-[427px]">
       Ao enviar o formulário, concordo com o tratamento dos meus dados
       pessoais conforme a <a class="font-bold border-b cursor-pointer" href={privacyTermsLink}>Política de Privacidade</a> e os <a class="font-bold border-b cursor-pointer" href={useTermsLink}>Termos de Uso</a>.
     </p>
