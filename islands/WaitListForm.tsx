@@ -20,9 +20,9 @@ export default function WaitListForm({waitListTitle, waitListButtonText, privacy
   }
   return (<div class="mt-3">
     <p class="font-thin">{waitListTitle}</p>
-    <form class="my-2" onSubmit={handleSubmit}>
+    <form class="mt-2" onSubmit={handleSubmit}>
       <input 
-        class="mr-2 py-3 px-4 rounded-lg text-black"
+        class="mr-2 mt-2 py-3 px-4 rounded-lg text-black"
         type="email"
         data-wait="Só um momento..."
         placeholder="insira o seu melhor email"
@@ -31,7 +31,7 @@ export default function WaitListForm({waitListTitle, waitListButtonText, privacy
       />
       <input
         type="submit"
-        class="cursor-pointer border border-accent rounded-lg py-3 px-6 text-base"
+        class="cursor-pointer border border-accent rounded-lg py-3 px-6 my-2 text-base"
         value={waitListButtonText}
       />
     </form>
