@@ -16,11 +16,11 @@ interface Props {
  */
   benefitsTitle: string;
   /**
- * @title beneficios
+ * @title Beneficios
  */
   benefits: string[];
   /**
- * @title icone dos beneficios
+ * @title Icone dos beneficios
  */
   benefitsIcon?: ImageWidget;
   /**
@@ -42,7 +42,7 @@ interface Props {
 }
 
 export default function MainProduct({productImage, productImageAlt, benefitsTitle, benefits, benefitsIcon, waitListTitle, waitListButtonText, privacyTermsLink, useTermsLink}:Props) {
-  return (<div class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-950 px-10 sm:px-16 pt-16 flex flex-col lg:flex-row items-start justify-center text-primary min-h-[100vh]">
+  return (<div class="bg-gradient-to-r from-zinc-900 via-zinc-950 to-zinc-950 px-10 sm:px-16 pt-16 flex items-center flex-col lg:flex-row lg:items-start justify-center text-primary min-h-[100vh]">
     <div class="lg:w-[50%] flex items-center justify-end">
         <Image 
           src={productImage}
