@@ -11,8 +11,27 @@ interface Props {
 export default function WaitListForm({waitListTitle, waitListButtonText, privacyTermsLink, useTermsLink}: Props) {
   const [email, setEmail] = useState("");
 
+  // const formData = {
+  //   name: "Form-chinelopay",
+  //   pageId: "6605bad1071b70f087174913",
+  //   elementId: "3aa60eab-7e3d-790e-d7d4-eb8e0ef36041",
+  //   source: "https://www.ng.cash/marketing/chinelopay",
+  //   test: false,
+  //   dolphin: false
+  // }
+
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
+
+    // fetch('https://webflow.com/api/v1/form/6385128589ca38c0cb82b578',{
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify({...formData, fields: {
+    //     'Ebook Email': email
+    //   }, })
+    // })
   }
 
   const handleChange:JSX.GenericEventHandler<HTMLInputElement> = (e:any) => {
